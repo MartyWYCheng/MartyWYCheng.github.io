@@ -2,10 +2,4 @@ title: Wen-Yu (Marty) Cheng
 logo: /assets/img/profile_morgan_bw.jpg
 description: https://martywycheng.github.io/
 show_downloads: true
-# theme: jekyll-theme-minimal
-
-remote_theme: jekyll/minimal
-plugins:
-  - jekyll-remote-theme
-minima:
-  skin: dark # or auto if you want it to switch with your system settings.
+theme: jekyll-theme-minimal
