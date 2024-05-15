@@ -4,7 +4,7 @@ description: https://martywycheng.github.io/
 show_downloads: true
 # theme: jekyll-theme-minimal
 
-remote_theme: jekyll/minima
+remote_theme: jekyll/minimal
 plugins:
   - jekyll-remote-theme
 minima:
