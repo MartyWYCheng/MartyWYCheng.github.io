@@ -1,4 +1,4 @@
-# Summary
+# Resume
 
 Ambitious and resourceful researcher with proven experience in rapid prototyping, robotics, prosthetics, academic/grant writing, and public speaking. Great passion for finding creative solutions to tough challenges. Thrives in all aspects of an interdisciplinary engineering project and excels in communicating complex ideas. Highly interested in AI and data analytics applications in Human-Robot Interaction (HRI) and Human-Computer Interaction (HCI).
 
