@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2 } from 'lucide-react';
+import { Code } from 'lucide-react';
 import { Section } from './Section';
 import { projectsData } from '../../data/projects';
 import { useSkillsHighlight } from '../../hooks/useSkillsHighlight';
@@ -8,8 +8,8 @@ export function Projects() {
   const { activeSkill } = useSkillsHighlight();
 
   return (
-    <Section icon={<Code2 />} title="Projects">
-      <div className="space-y-6">
+    <Section icon={<Code />} title="Projects" titleClassName="text-custom-blue">
+      <div className="space-y-4">
         {projectsData.map((project) => {
           const isHighlighted = activeSkill && project.skills.includes(activeSkill);
           return (

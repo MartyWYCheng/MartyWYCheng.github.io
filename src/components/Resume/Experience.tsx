@@ -9,7 +9,7 @@ export function Experience() {
   const { activeSkill } = useSkillsHighlight();
 
   return (
-    <Section icon={<Briefcase />} title="Experience">
+    <Section icon={<Briefcase />} title="Experience" titleClassName="text-custom-blue">
       <div className="space-y-6">
         {experienceData.map((exp) => {
           const isHighlighted = activeSkill && exp.skills.includes(activeSkill);

@@ -29,7 +29,7 @@ export function Bio() {
           </div>
         </div>
       </div>
-      <Section icon={<User />} title="About Me">
+      <Section icon={<User />} title="About Me" titleClassName="text-custom-blue">
         <p className="text-gray-300 leading-relaxed">
         Versatile researcher with over 10 years of experience in rapid prototyping, prosthetics, leadership, 
         academic/grant writing, and public speaking. Great passion for finding creative solutions to critical 

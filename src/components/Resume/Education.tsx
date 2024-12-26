@@ -5,7 +5,7 @@ import { educationData } from '../../data/education';
 
 export function Education() {
   return (
-    <Section icon={<BookOpen />} title="Education">
+    <Section icon={<BookOpen />} title="Education" titleClassName="text-custom-blue">
       <div className="space-y-4">
         {educationData.map((edu) => (
           <div key={edu.degree} className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors duration-300">
