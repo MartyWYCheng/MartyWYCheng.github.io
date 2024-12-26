@@ -6,8 +6,8 @@ export function SkillsList() {
   const { setActiveSkill } = useSkillsHighlight();
 
   return (
-    <aside className="w-64 sticky top-0 h-screen overflow-y-auto bg-gray-900 p-6 space-y-6">
-      <h2 className="text-xl font-bold text-blue-400 mb-4">Skills</h2>
+    <aside className="w-64 sticky top-0 h-screen overflow-y-auto bg-custom-gray p-6 space-y-6">
+      <h2 className="text-xl font-bold text-custom-blue mb-4">Skills</h2>
       <div className="space-y-3">
         {Object.entries(skillsData).map(([category, skills]) => (
           <div key={category}>
