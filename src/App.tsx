@@ -1,15 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Resume } from './pages/Resume';
-import { ExperienceDetail } from './pages/ExperienceDetail';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Bio } from './components/Resume/Bio';
+import { SkillsList } from './components/Sidebar/SkillsList';
 
-export default function App() {
+function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Resume />} />
-        <Route path="/experience/:id" element={<ExperienceDetail />} />
-      </Routes>
+      <div className="flex">
+        <SkillsList />
+        <div className="flex-1 pl-12 md:pl-0">
+          <Switch>
+            <Route path="/" exact component={Bio} />
+            {/* Add other routes here */}
+          </Switch>
+        </div>
+      </div>
     </Router>
   );
 }
+
+export default App;
