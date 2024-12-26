@@ -5,7 +5,7 @@ import { Section } from './Section';
 export function Bio() {
   return (
     <div className="mb-8">
-      <div className="flex items-center gap-6 mb-6">
+      <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-custom-blue">
           <img
             src="https://github.com/MartyWYCheng/MartyWYCheng.github.io/blob/main/assets/img/profile_bw.jpg?raw=true"
@@ -13,10 +13,10 @@ export function Bio() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div>
+        <div className="text-center md:text-left">
           <h1 className="text-4xl font-bold text-white mb-2">Marty Cheng</h1>
           <p className="text-xl text-custom-blue mb-4">PhD Candidate | Graduate Researcher</p>
-          <div className="flex gap-4">
+          <div className="flex justify-center md:justify-start gap-4">
             <a href="https://github.com/MartyWYCheng" className="text-custom-gray hover:text-white transition-colors">
               <Github size={20} />
             </a>
