@@ -4,7 +4,7 @@ import { Section } from './Section';
 
 export function Bio() {
   return (
-    <div className="mb-8 pt-16 md:pt-0 pl-12 md:pl-0">
+    <div className="mb-8 pt-16 md:pt-0">
       <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-custom-blue">
           <img
