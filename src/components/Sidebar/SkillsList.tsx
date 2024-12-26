@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { skillsData } from '../../data/skills';
 import { useSkillsHighlight } from '../../hooks/useSkillsHighlight';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export function SkillsList() {
   const { setActiveSkill } = useSkillsHighlight();
@@ -13,7 +13,7 @@ export function SkillsList() {
         className="md:hidden text-white fixed top-4 left-4 z-10"
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
-        {isCollapsed ? <ChevronDown size={24} /> : <ChevronUp size={24} />}
+        {isCollapsed ? <ChevronRight size={24} /> : <ChevronLeft size={24} />}
       </button>
       <aside className={`transition-all duration-300 ${isCollapsed ? 'hidden md:block' : 'block'} md:w-64 sticky top-0 h-screen overflow-y-auto bg-custom-gray pt-16 p-6 space-y-6`}>
         {!isCollapsed && (
