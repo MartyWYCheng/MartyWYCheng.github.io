@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         // Add or modify your custom colors here
-        'custom-blue': '#1e3a8a', // Change this value to your desired color
+        //'custom-blue': '#1e3a8a', // Change this value to your desired color
+        'custom-blue': '#d1e9ff', // Change this value to your desired color
         'custom-gray': '#1f2937', // Change this value to your desired color
         // ...existing colors...
       },
