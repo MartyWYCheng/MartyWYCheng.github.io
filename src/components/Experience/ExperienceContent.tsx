@@ -23,7 +23,7 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-white mb-3">Technologies Used</h2>
+        <h2 className="text-xl font-semibold text-white mb-3">Skills Used</h2>
         <div className="flex flex-wrap gap-2">
           {experience.skills.map((skill) => (
             <span

@@ -1,7 +1,17 @@
 export const skillsData = {
+  'Specialty/Focus': [
+    'Prosthetics',
+    'Human-Robot/Computer Interaction (HRI/HCI)',
+    'Rapid Prototyping',
+    'AI Robotic Applications',
+    'Biomedical Devices',
+    'Tactile Sensing',
+    'Solidworks',
+    'MATLAB/Simulink',
+    'Soft Robotics',
+  ],
   'Programming Languages': [
-    'MATLAB',
-    'Simulink',
+    'MATLAB/Simulink',
     'C/C++',
     'Python',
     'Swift',
@@ -27,9 +37,9 @@ export const skillsData = {
     'Solidworks',
     'Fusion 360',
     'OnShape',
-    '3D Printing',
     'Blender',
     'Adobe Creative Suite',
+    'Mold Making & Casting',
     'Unity',
     'Unreal Engine',
     '3D Printer Proficiency',
@@ -41,6 +51,7 @@ export const skillsData = {
   ],
   'Robotics': [
     'ROS',
+    'Soft Robotics',
     'Universal Robotics (UR) Lineup',
     'Kinova Gen3 Lite',
     'TurtleBot3',
@@ -56,4 +67,12 @@ export const skillsData = {
     'Music Theory & Composition',
     'Sound Design',
   ],
+  'Soft Skills': [
+    'Academic/Grant Writing',
+    'Public Speaking',
+    'Interdisciplinary Engineering',
+    'Team Leadership',
+  ]
+    
+    
 };
