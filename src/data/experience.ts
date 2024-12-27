@@ -25,7 +25,7 @@ export const experienceData: Experience[] = [
       'Iterated numerous prototypes to ensure the device was safe, user-friendly, and reliable',
       'Collaborated with the Quality Assurance team in extensive engineering documentation/history and for device risk management.'
     ],
-    skills: ['Embedded Systems Development', 'Git Version Control', 'Solidworks', 'Design for Manufacturability (DFM)', 'OnShape', '3D Printer Proficiency', 'Arduino', 'Rapid Prototyping' ]
+    skills: ['Biomedical Devices', 'Embedded Systems Development', 'Git Version Control', 'Solidworks', 'Design for Manufacturability (DFM)', 'OnShape', '3D Printer Proficiency', 'Arduino', 'Rapid Prototyping' ]
   },
   {
     id: 'johns-hopkins',

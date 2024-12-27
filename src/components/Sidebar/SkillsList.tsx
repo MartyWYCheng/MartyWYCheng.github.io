@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import { skillsData } from '../../data/skills';
 import { useSkillsHighlight } from '../../hooks/useSkillsHighlight';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
 
 export function SkillsList() {
   const { setActiveSkill } = useSkillsHighlight();
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [collapsedCategories, setCollapsedCategories] = useState<{ [key: string]: boolean }>({});
+
+  const toggleCategory = (category: string) => {
+    setCollapsedCategories((prev) => ({
+      ...prev,
+      [category]: !prev[category],
+    }));
+  };
 
   return (
     <div className="relative">
@@ -22,19 +30,26 @@ export function SkillsList() {
             <div className="space-y-3">
               {Object.entries(skillsData).map(([category, skills]) => (
                 <div key={category}>
-                  <h3 className="text-sm uppercase text-gray-400 mb-2">{category}</h3>
-                  <div className="space-y-2">
-                    {skills.map((skill) => (
-                      <div
-                        key={skill}
-                        className="p-2 rounded hover:bg-gray-800 cursor-pointer transition-colors duration-300"
-                        onMouseEnter={() => setActiveSkill(skill)}
-                        onMouseLeave={() => setActiveSkill(null)}
-                      >
-                        <span className="text-gray-100">{skill}</span>
-                      </div>
-                    ))}
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-sm uppercase text-gray-400 mb-2">{category}</h3>
+                    <button onClick={() => toggleCategory(category)}>
+                      {collapsedCategories[category] ? <ChevronDown size={16} /> : <ChevronUp size={16} />}
+                    </button>
                   </div>
+                  {!collapsedCategories[category] && (
+                    <div className="space-y-2">
+                      {skills.map((skill) => (
+                        <div
+                          key={skill}
+                          className="p-2 rounded hover:bg-gray-800 cursor-pointer transition-colors duration-300"
+                          onMouseEnter={() => setActiveSkill(skill)}
+                          onMouseLeave={() => setActiveSkill(null)}
+                        >
+                          <span className="text-gray-100">{skill}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
