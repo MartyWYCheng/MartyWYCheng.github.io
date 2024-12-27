@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { skillsData } from '../../data/skills';
 import { useSkillsHighlight } from '../../hooks/useSkillsHighlight';
 import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
@@ -7,6 +7,14 @@ export function SkillsList() {
   const { setActiveSkill } = useSkillsHighlight();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [collapsedCategories, setCollapsedCategories] = useState<{ [key: string]: boolean }>({});
+
+  useEffect(() => {
+    const initialCollapsedState = Object.keys(skillsData).reduce((acc, category) => {
+      acc[category] = category !== 'Specialty/Focus';
+      return acc;
+    }, {} as { [key: string]: boolean });
+    setCollapsedCategories(initialCollapsedState);
+  }, []);
 
   const toggleCategory = (category: string) => {
     setCollapsedCategories((prev) => ({
