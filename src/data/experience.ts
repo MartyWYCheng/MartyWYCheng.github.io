@@ -11,24 +11,21 @@ interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    id: 'tech-corp-senior',
-    title: 'Senior Software Engineer',
-    company: 'Tech Corp',
-    period: '2020 - Present',
+    id: 'golden-hour',
+    title: 'Systems Engineer',
+    company: 'Golden Hour Medical',
+    period: '2023 - 2024',
     description: 'Led development of mission-critical applications using modern web technologies. Mentored junior developers and implemented robust CI/CD pipelines.',
     responsibilities: [
-      'Led a team of 5 developers in developing and maintaining enterprise-scale applications',
-      'Implemented microservices architecture using Node.js and Docker',
-      'Established coding standards and best practices across the team',
-      'Conducted code reviews and provided mentorship to junior developers',
-      'Optimized application performance and reduced loading times by 60%'
+      'Lead the effort in ensuring functionality of critical complex systems AutoTQ, a new IoT-enabled life-saving automatic tourniquet device',
+      'Operate with strict adherence to FDA ISO 13485 and 14971 regulations for biomedical devices'
     ],
     achievements: [
-      'Successfully delivered a major platform upgrade with zero downtime',
-      'Reduced deployment time by 70% through CI/CD pipeline optimization',
-      'Implemented automated testing that increased code coverage to 90%'
+      'Brought AutoTQ into mass production within four months of the fast-moving demands of a new startup',
+      'Iterated numerous prototypes to ensure the device was safe, user-friendly, and reliable',
+      'Collaborated with the Quality Assurance team in extensive engineering documentation/history and for device risk management.'
     ],
-    skills: ['React', 'TypeScript', 'Node.js', 'AWS', 'Docker']
+    skills: ['Embedded Systems Development', 'git Version Control', 'Solidworks', 'Design for Manufacturability (DFM)', 'OnShape', '3D Printer Proficiency', ]
   },
   {
     id: 'startup-fullstack',
