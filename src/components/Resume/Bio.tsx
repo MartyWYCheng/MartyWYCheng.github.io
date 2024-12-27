@@ -17,13 +17,13 @@ export function Bio() {
           <h1 className="text-4xl font-bold text-white mb-2">Marty Cheng</h1>
           <p className="text-xl text-custom-blue mb-4">PhD Candidate | Graduate Researcher</p>
           <div className="flex justify-center md:justify-start gap-4">
-            <a href="https://github.com/MartyWYCheng" className="text-custom-gray hover:text-white transition-colors">
+            <a href="https://github.com/MartyWYCheng" className="text-custom-blue hover:text-white transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/wen-yu-cheng/" className="text-custom-gray hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/wen-yu-cheng/" className="text-custom-blue hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:marty.chengwy@gmail.com" className="text-custom-gray hover:text-white transition-colors">
+            <a href="mailto:marty.chengwy@gmail.com" className="text-custom-blue hover:text-white transition-colors">
               <Mail size={20} />
             </a>
           </div>
