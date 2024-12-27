@@ -6,21 +6,10 @@ import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
 export function SkillsList() {
   const { setActiveSkill } = useSkillsHighlight();
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [collapsedCategories, setCollapsedCategories] = useState<{ [key: string]: boolean }>({});
-
-  useEffect(() => {
-    const initialCollapsedState = Object.keys(skillsData).reduce((acc, category) => {
-      acc[category] = category !== 'Specialty/Focus';
-      return acc;
-    }, {} as { [key: string]: boolean });
-    setCollapsedCategories(initialCollapsedState);
-  }, []);
+  const [activeCategory, setActiveCategory] = useState<string | null>('Specialty/Focus');
 
   const toggleCategory = (category: string) => {
-    setCollapsedCategories((prev) => ({
-      ...prev,
-      [category]: !prev[category],
-    }));
+    setActiveCategory((prev) => (prev === category ? null : category));
   };
 
   return (
@@ -41,10 +30,10 @@ export function SkillsList() {
                   <div className="flex justify-between items-center">
                     <h3 className="text-sm uppercase text-gray-400 mb-2">{category}</h3>
                     <button onClick={() => toggleCategory(category)}>
-                      {collapsedCategories[category] ? <ChevronDown size={16} /> : <ChevronUp size={16} />}
+                      {activeCategory === category ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                     </button>
                   </div>
-                  {!collapsedCategories[category] && (
+                  {activeCategory === category && (
                     <div className="space-y-2">
                       {skills.map((skill) => (
                         <div
