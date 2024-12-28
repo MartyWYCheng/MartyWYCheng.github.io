@@ -32,7 +32,7 @@ export const experienceData: Experience[] = [
     title: 'Research Intern',
     company: 'Johns Hopkins University - Neuroengineering and Biomedical Instrumentation Laboratory',
     period: '2020 – 2024',
-    description: 'Designed a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. Publication to IEEE Science Advances Journal under review. \nPI: Dr. Nitish Thakor.',
+    description: 'Designed a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. Publication to IEEE Science Advances Journal under review.<br />PI: Dr. Nitish Thakor.',
     responsibilities: [
       'Design a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger',
       'Aid in performance comparison against traditional soft robotic prosthetic fingers',
