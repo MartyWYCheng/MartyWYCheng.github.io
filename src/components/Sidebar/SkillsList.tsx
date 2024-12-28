@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
 
 export function SkillsList() {
   const { setActiveSkill } = useSkillsHighlight();
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true); // Set initial state to true
   const [activeCategory, setActiveCategory] = useState<string | null>('Specialty/Focus');
 
   const toggleCategory = (category: string) => {
