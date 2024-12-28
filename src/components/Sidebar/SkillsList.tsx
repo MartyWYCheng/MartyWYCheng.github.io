@@ -28,7 +28,7 @@ export function SkillsList() {
       >
         {isCollapsed ? <ChevronRight size={24} /> : <ChevronLeft size={24} />}
       </button>
-      <aside className={`transition-all duration-300 ${isCollapsed ? 'hidden md:block' : 'block'} md:w-64 sticky top-0 h-screen overflow-y-auto bg-custom-gray pt-16 p-6 space-y-6`}>
+      <aside className={`sidebar transition-all duration-300 ${isCollapsed ? 'hidden md:block' : 'block'} md:w-64 sticky top-0 h-screen overflow-y-auto bg-custom-gray pt-16 p-6 space-y-6`}>
         {!isCollapsed && (
           <>
             <h2 className="text-xl font-bold text-custom-blue mb-4">Skills</h2>

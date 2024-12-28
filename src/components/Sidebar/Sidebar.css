@@ -1,0 +1,5 @@
+/* Add the sidebar class to the sidebar component */
+.sidebar {
+  /* existing styles */
+  overflow-y: auto; /* Ensure the scrollbar is visible */
+}
