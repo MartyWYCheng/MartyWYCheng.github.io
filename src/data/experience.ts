@@ -62,6 +62,6 @@ export const experienceData: Experience[] = [
       'Led the development of a Variable-Pressure Prosthetic Socket using Granular Jamming technology and secured $1,200 in 2021 to further advance the project. ',
       'Led a project team in securing $2,400 in consecutive grants (2018 and 2019) to develop a novel modular Soft Ro-botic Haptic Feedback system. '
     ],
-    skills: ['Prosthetics', 'Biomedical Devices', 'MATLAB/Simulink', 'AI Robotic Applications', 'Soft Robotics', 'Tactile Sensing', 'Solidworks', 'Embedded Systems Development', 'ROS', 'Universal Robotics (UR) Lineup', 'C/C++', 'Academic/Grant Writing', 'Public Speaking', 'Team Leadership']
+    skills: ['Prosthetics', 'Biomedical Devices', 'MATLAB/Simulink', 'AI Integration', 'Soft Robotics', 'Tactile Sensing', 'Solidworks', 'Embedded Systems Development', 'ROS', 'Universal Robotics (UR) Lineup', 'C/C++', 'Academic/Grant Writing', 'Public Speaking', 'Team Leadership']
   }
 ];

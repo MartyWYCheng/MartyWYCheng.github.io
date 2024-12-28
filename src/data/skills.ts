@@ -3,7 +3,7 @@ export const skillsData = {
     'Prosthetics',
     'Human-Robot/Computer Interaction (HRI/HCI)',
     'Rapid Prototyping',
-    'AI Robotic Applications',
+    'AI Integration',
     'Biomedical Devices',
     'Tactile Sensing',
     'Solidworks',
