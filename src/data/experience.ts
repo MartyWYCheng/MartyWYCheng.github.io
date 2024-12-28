@@ -15,7 +15,7 @@ export const experienceData: Experience[] = [
     title: 'Systems Engineer',
     company: 'Golden Hour Medical',
     period: '2023 - 2024',
-    description: 'Lead the effort in ensuring functionality of critical complex systems AutoTQ, a new IoT-enabled life-saving automatic tourniquet device.',
+    description: 'Pioneered new life-saving automatic tourniquet technology. Led the effort in bringing prototype hardware into mass production in under four months and ensured functionality of critical complex systems.',
     responsibilities: [
       'Lead the effort in ensuring functionality of critical complex systems AutoTQ, a new IoT-enabled life-saving automatic tourniquet device',
       'Operate with strict adherence to FDA ISO 13485 and 14971 regulations for biomedical devices'
@@ -25,14 +25,14 @@ export const experienceData: Experience[] = [
       'Iterated numerous prototypes to ensure the device was safe, user-friendly, and reliable',
       'Collaborated with the Quality Assurance team in extensive engineering documentation/history and for device risk management.'
     ],
-    skills: ['Biomedical Devices', 'Embedded Systems Development', 'Git Version Control', 'Solidworks', 'Design for Manufacturability (DFM)', 'OnShape', '3D Printer Proficiency', 'Arduino', 'Rapid Prototyping' ]
+    skills: ['Biomedical Devices', 'Embedded Systems Development', 'Rapid Prototyping', 'Git Version Control', 'Solidworks', 'Design for Manufacturability (DFM)', 'OnShape', '3D Printer Proficiency', 'Arduino', 'Interdisciplinary Engineering']
   },
   {
     id: 'johns-hopkins',
     title: 'Research Intern',
     company: 'Johns Hopkins University - Neuroengineering and Biomedical Instrumentation Laboratory',
     period: '2020 – 2024',
-    description: 'Designed a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. <strong>Publication to IEEE Science Advances Journal under review.</strong><br />PI: Dr. Nitish Thakor.',
+    description: 'Collaborated with an interdisciplinary team fully remotely and led the design of a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. <strong>Publication to IEEE Science Advances Journal under review.</strong><br />PI: Dr. Nitish Thakor.',
     responsibilities: [
       'Design a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger',
       'Aid in performance comparison against traditional soft robotic prosthetic fingers',
@@ -45,26 +45,23 @@ export const experienceData: Experience[] = [
       'Collaborated with the cross-disciplinary research team at the Johns Hopkins Neuroengineering and Biomedical Instrumentation Laboratory fully remotely during the COVID-19 pandemic',
       'Publication to IEEE Science Advances Journal submitted and is currently under review'
     ],
-    skills: ['Solidworks', 'Soft Robotics', 'Finite Element Analysis (FEA)', 'Tactile Sensing', 'Mold Making & Casting', 'Prosthetics']
+    skills: ['Solidworks', 'Soft Robotics', 'Finite Element Analysis (FEA)', 'Tactile Sensing', 'Mold Making & Casting', 'Prosthetics', 'Interdisciplinary Engineering']
   },
   {
-    id: 'dev-solutions',
-    title: 'TEST',
-    company: 'Dev Solutions',
+    id: 'biorobotics-lab',
+    title: 'Research Assistant',
+    company: 'Florida Atlantic University - BioRobotics Lab',
     period: '2016 - 2018',
-    description: 'Built and maintained multiple client-facing applications. Implemented responsive designs and RESTful APIs.',
+    description: 'Developing new methods of improving the quality of life of amputees through advancements such as smart AI robotic prosthetics with integrated haptic feedback. <br />PI: Dr. Erik Engeberg',
     responsibilities: [
-      'Developed and maintained client websites using React',
-      'Created responsive layouts using modern CSS techniques',
-      'Built and integrated RESTful APIs',
-      'Implemented automated testing solutions',
-      'Collaborated with designers to implement pixel-perfect designs'
+      'Designed a novel high-density Force Myogram (FMG) sensor array, outperforming EMG with 99% classification accuracy across 20 hand gestures using AI pattern recognition in our 10-subject test. Publication in progress.',
+      'Developed and integrated custom software, firmware, and hardware components for data collection, featuring a proprietary biodata processing and analysis method with an intuitive subject testing user interface.',
+      'Programmed UR5 and UR3 robots to precisely probe nine points within 15mm² area for testing custom-built Hall ef-fect sensors, ensuring meticulous accuracy in robot movement.'
     ],
     achievements: [
-      'Successfully delivered 15+ client projects on time and within budget',
-      'Reduced bug reports by 50% through comprehensive testing implementation',
-      'Mentored 3 junior developers who were promoted to mid-level positions'
+      'Led the development of a Variable-Pressure Prosthetic Socket using Granular Jamming technology and secured $1,200 in 2021 to further advance the project. ',
+      'Led a project team in securing $2,400 in consecutive grants (2018 and 2019) to develop a novel modular Soft Ro-botic Haptic Feedback system. '
     ],
-    skills: ['React', 'Python', 'Tailwind CSS', 'PostgreSQL']
+    skills: ['Prosthetics', 'Biomedical Devices', 'MATLAB/Simulink', 'AI Robotic Applications', 'Soft Robotics', 'Tactile Sensing', 'Solidworks', 'Embedded Systems Development', 'ROS', 'Universal Robotics (UR) Lineup', 'C/C++', 'Academic/Grant Writing', 'Public Speaking', 'Team Leadership']
   }
 ];
