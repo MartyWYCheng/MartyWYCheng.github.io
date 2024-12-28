@@ -78,6 +78,6 @@ export const experienceData: Experience[] = [
       'Published and presented work on Wireless Charging Station at 2023 IEEE HONET conference.',
       'Publication for PPO training algorithm in progress.'
     ],
-    skills: ['AI Integration', 'Deep Reinforcement Learning (DRL)', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy', 'Python', 'C/C++', 'ROS', 'TurtleBot3', 'Kinova Gen3 Lite', 'Gazebo', 'Academic/Grant Writing', 'Public Speaking']
+    skills: ['AI Integration', 'Deep Reinforcement Learning (DRL)', 'TensorFlow', 'Scikit-learn', 'Keras', 'Pytorch', 'Pandas', 'NumPy', 'Python', 'C/C++', 'ROS', 'TurtleBot3', 'Kinova Gen3 Lite', 'Gazebo', 'Academic/Grant Writing', 'Public Speaking']
   }
 ];
