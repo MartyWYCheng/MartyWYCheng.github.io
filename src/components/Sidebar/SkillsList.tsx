@@ -37,7 +37,7 @@ export function SkillsList() {
                 <div key={category}>
                   <div className="flex justify-between items-center">
                     <h3 className="text-sm uppercase text-gray-400 mb-2">{category}</h3>
-                    <button onClick={() => toggleCategory(category)}>
+                    <button className="text-gray-400" onClick={() => toggleCategory(category)}>
                       {activeCategory === category ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                     </button>
                   </div>
