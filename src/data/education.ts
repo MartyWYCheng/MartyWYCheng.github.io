@@ -1,14 +1,22 @@
 export const educationData = [
   {
-    degree: 'Master of Computer Science',
-    school: 'Stanford University',
-    period: '2014 - 2016',
-    achievements: 'Specialized in Artificial Intelligence and Machine Learning. Graduate Research Assistant in the Computer Vision Lab.',
+    degree: 'PhD in Computer Science',
+    school: 'Florida Atlatnic University',
+    period: '2024 - Present',
+    achievements: 'Successfully passed the qualifying examination',
   },
   {
-    degree: 'Bachelor of Science in Computer Science',
-    school: 'University of California, Berkeley',
-    period: '2010 - 2014',
-    achievements: "Dean's List, Senior thesis on distributed systems.",
+    degree: 'Master of Science in Artificial Intelligence',
+    school: 'Florida Atlatnic University',
+    period: '2022 - 2023',
+    achievements: 'Big Data Analytics Certificate',
+  },
+  {
+    degree: 'Bachelor of Science in Mechanical Engineering - Computer Science Minor',
+    school: 'Florida Atlatnic University',
+    period: '2018 - 2021',
+    achievements: ['Computer Scicence Minor',
+    'FAU High School Dual Enrollment Program',
+    'Innovation Leadership Honors Program (ILHP)' ]
   },
 ];
