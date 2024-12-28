@@ -51,7 +51,7 @@ export const experienceData: Experience[] = [
     id: 'biorobotics-lab',
     title: 'Research Assistant',
     company: 'Florida Atlantic University - BioRobotics Lab',
-    period: '2016 - 2018',
+    period: '2018 - Present',
     description: 'Developing new methods of improving the quality of life of amputees through advancements such as smart AI robotic prosthetics with integrated haptic feedback. <br />PI: Dr. Erik Engeberg',
     responsibilities: [
       'Designed a novel high-density Force Myogram (FMG) sensor array, outperforming EMG with 99% classification accuracy across 20 hand gestures using AI pattern recognition in our 10-subject test. Publication in progress.',
@@ -62,6 +62,22 @@ export const experienceData: Experience[] = [
       'Led the development of a Variable-Pressure Prosthetic Socket using Granular Jamming technology and secured $1,200 in 2021 to further advance the project. ',
       'Led a project team in securing $2,400 in consecutive grants (2018 and 2019) to develop a novel modular Soft Ro-botic Haptic Feedback system. '
     ],
-    skills: ['Prosthetics', 'Biomedical Devices', 'MATLAB/Simulink', 'AI Integration', 'Soft Robotics', 'Tactile Sensing', 'Solidworks', 'Embedded Systems Development', 'ROS', 'Universal Robotics (UR) Lineup', 'C/C++', 'Academic/Grant Writing', 'Public Speaking', 'Team Leadership']
+    skills: ['Prosthetics', 'Biomedical Devices', 'MATLAB/Simulink', 'AI Integration', 'Soft Robotics', 'Tactile Sensing', 'Rapid Prototyping', 'Solidworks', 'Embedded Systems Development', 'Deep Reinforcement Learning (DRL)', 'ROS', 'Universal Robotics (UR) Lineup', 'C/C++', 'Academic/Grant Writing', 'Public Speaking', 'Team Leadership']
+  },
+  {
+    id: 'adaptive-learning-lab',
+    title: 'Research Assistant',
+    company: 'Florida Atlantic University - Adaptive Learning Systems Lab',
+    period: '2018 - Present',
+    description: 'Diving deep into AI robotic applications with high-end vision/navigation simulations of mobile robots and robotic arms such as TurtleBot and Kinova Gen3 Lite through ROS. <br />PI: Dr. Zhen Ni',
+    responsibilities: [
+      'Develop a low-cost Wireless Charging Station for use with the integrated computer vision system of the Turtle-Bot 3 mobile robot platform.',
+      'Improve a PPO robotic arm training algorithm for parallel training of the Kinova Gen 3 Robot Arm. '
+    ],
+    achievements: [
+      'Published and presented work on Wireless Charging Station at 2023 IEEE HONET conference.',
+      'Publication for PPO training algorithm in progress.'
+    ],
+    skills: ['AI Integration', 'Deep Reinforcement Learning (DRL)', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy', 'Python', 'C/C++', 'ROS', 'TurtleBot3', 'Kinova Gen3 Lite', 'Gazebo', 'Academic/Grant Writing', 'Public Speaking']
   }
 ];
