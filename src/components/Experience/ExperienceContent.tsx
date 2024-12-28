@@ -10,7 +10,7 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
     <div className="space-y-6">
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
-        <p className="text-gray-300">{experience.description}</p>
+        <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: experience.description }}></p>
       </section>
 
       <section>
