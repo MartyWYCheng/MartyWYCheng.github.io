@@ -5,8 +5,16 @@ import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
 
 export function SkillsList() {
   const { setActiveSkill } = useSkillsHighlight();
-  const [isCollapsed, setIsCollapsed] = useState(true); // Set initial state to true
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>('Specialty/Focus');
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    setIsCollapsed(mediaQuery.matches);
+    const handleResize = () => setIsCollapsed(mediaQuery.matches);
+    mediaQuery.addEventListener('change', handleResize);
+    return () => mediaQuery.removeEventListener('change', handleResize);
+  }, []);
 
   const toggleCategory = (category: string) => {
     setActiveCategory((prev) => (prev === category ? null : category));
