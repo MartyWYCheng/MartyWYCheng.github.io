@@ -12,11 +12,11 @@ export function Education() {
             <h3 className="text-xl font-semibold text-blue-400">{edu.degree}</h3>
             <p className="text-gray-400">{edu.school}</p>
             <p className="text-gray-500">{edu.period}</p>
-            <ul>
+            <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
             {edu.achievements.map((achievement, index) => (
               <li key={index}>{achievement}</li>
             ))}
-          </ul>
+            </ul>
           </div>
         ))}
       </div>
