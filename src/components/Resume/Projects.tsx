@@ -22,7 +22,7 @@ export function Projects() {
               }`}
             >
               <h3 className="text-xl font-semibold text-blue-400">{project.title}</h3>
-              <p className="mt-2 text-gray-300">{project.description}</p>
+              <p className="mt-2 text-gray-300" dangerouslySetInnerHTML={{ __html: project.description }}></p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {project.skills.map((skill) => (
                   <span

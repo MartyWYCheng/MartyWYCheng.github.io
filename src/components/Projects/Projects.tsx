@@ -13,7 +13,7 @@ export function Projects() {
           >
             {project.title}
           </Link>
-          <p className="text-gray-300 mt-2">{project.description}</p>
+          <p className="text-gray-300 mt-2" dangerouslySetInnerHTML={{ __html: project.description }}></p>
           <div className="mt-3 flex flex-wrap gap-2">
             {project.skills.map((skill) => (
               <span key={skill} className="text-xs px-2 py-1 rounded bg-gray-700 text-gray-300">
