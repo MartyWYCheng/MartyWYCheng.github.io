@@ -12,9 +12,11 @@ export function Education() {
             <h3 className="text-xl font-semibold text-blue-400">{edu.degree}</h3>
             <p className="text-gray-400">{edu.school}</p>
             <p className="text-gray-500">{edu.period}</p>
-            {edu.achievements && (
-              <p className="mt-2 text-gray-300">{edu.achievements}</p>
-            )}
+            <ul>
+            {edu.achievements.map((achievement, index) => (
+              <li key={index}>{achievement}</li>
+            ))}
+          </ul>
           </div>
         ))}
       </div>
