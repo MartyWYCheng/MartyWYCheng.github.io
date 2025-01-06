@@ -1,5 +1,6 @@
 import React from 'react';
 import { User, Github, Linkedin, Mail } from 'lucide-react';
+import { FaGoogle } from 'react-icons/fa'; // Import Google icon
 import { Section } from './Section';
 
 export function Bio() {
@@ -25,6 +26,9 @@ export function Bio() {
             </a>
             <a href="mailto:marty.chengwy@gmail.com" className="text-custom-blue hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
               <Mail size={20} />
+            </a>
+            <a href="https://scholar.google.com/citations?user=qc-hbyIAAAAJ&hl=en" className="text-custom-blue hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+              <FaGoogle size={20} />
             </a>
           </div>
         </div>
