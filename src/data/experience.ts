@@ -25,7 +25,7 @@ export const experienceData: Experience[] = [
       'Iterated numerous prototypes to ensure the device was safe, user-friendly, and reliable',
       'Collaborated with the Quality Assurance team in extensive engineering documentation/history and for device risk management.'
     ],
-    skills: ['Biomedical Devices', 'Embedded Systems Development', 'Rapid Prototyping', 'Git Version Control', 'Solidworks', 'Design for Manufacturability (DFM)', 'OnShape', '3D Printer Proficiency', 'Arduino', 'Interdisciplinary Engineering']
+    skills: ['Biomedical Devices', 'Embedded Systems Development', 'Rapid Prototyping', 'Git Version Control', 'Solidworks', 'Design for Manufacturability (DFM)', 'OnShape', '3D Printer Proficiency', 'Arduino', 'C/C++', 'Interdisciplinary Engineering']
   },
   {
     id: 'johns-hopkins',
@@ -45,7 +45,7 @@ export const experienceData: Experience[] = [
       'Collaborated with the cross-disciplinary research team at the Johns Hopkins Neuroengineering and Biomedical Instrumentation Laboratory fully remotely during the COVID-19 pandemic',
       'Publication to IEEE Science Advances Journal submitted and is currently under review'
     ],
-    skills: ['Solidworks', 'Soft Robotics', 'Finite Element Analysis (FEA)', 'Tactile Sensing', 'Mold Making & Casting', 'Prosthetics', 'Interdisciplinary Engineering']
+    skills: ['Solidworks', 'Soft Robotics', 'Biomedical Devices', 'Finite Element Analysis (FEA)', 'ANSYS', 'Tactile Sensing', 'Human-Robot/Computer Interaction (HRI/HCI)', 'Mold Making & Casting', 'Prosthetics', 'Interdisciplinary Engineering']
   },
   {
     id: 'biorobotics-lab',
@@ -62,7 +62,7 @@ export const experienceData: Experience[] = [
       'Led the development of a Variable-Pressure Prosthetic Socket using Granular Jamming technology and secured $1,200 in 2021 to further advance the project. ',
       'Led a project team in securing $2,400 in consecutive grants (2018 and 2019) to develop a novel modular Soft Ro-botic Haptic Feedback system. '
     ],
-    skills: ['Prosthetics', 'Biomedical Devices', 'MATLAB/Simulink', 'AI Integration', 'Soft Robotics', 'Tactile Sensing', 'Rapid Prototyping', 'Solidworks', 'Embedded Systems Development', 'Deep Reinforcement Learning (DRL)', 'ROS', 'Universal Robotics (UR) Lineup', 'C/C++', 'Academic/Grant Writing', 'Public Speaking', 'Team Leadership']
+    skills: ['Prosthetics', 'Biomedical Devices', 'MATLAB/Simulink', 'AI Integration', 'Soft Robotics', 'Tactile Sensing', 'Rapid Prototyping', 'Solidworks', 'Embedded Systems Development', 'Human-Robot/Computer Interaction (HRI/HCI)', 'Deep Reinforcement Learning (DRL)', 'ROS', 'Universal Robotics (UR) Lineup', 'Arduino', 'C/C++', 'Academic/Grant Writing', 'Public Speaking', 'Team Leadership']
   },
   {
     id: 'adaptive-learning-lab',
@@ -78,6 +78,6 @@ export const experienceData: Experience[] = [
       'Published and presented work on Wireless Charging Station at 2023 IEEE HONET conference.',
       'Publication for PPO training algorithm in progress.'
     ],
-    skills: ['AI Integration', 'Deep Reinforcement Learning (DRL)', 'TensorFlow', 'Scikit-learn', 'Keras', 'Pytorch', 'Pandas', 'NumPy', 'Python', 'C/C++', 'ROS', 'TurtleBot3', 'Kinova Gen3 Lite', 'Gazebo', 'Academic/Grant Writing', 'Public Speaking']
+    skills: ['AI Integration', 'Deep Reinforcement Learning (DRL)', 'TensorFlow', 'Scikit-learn', 'Keras', 'PyTorch', 'OpenCV', 'Pandas', 'NumPy', 'Python', 'C/C++', 'ROS', 'TurtleBot3', 'Kinova Gen3 Lite', 'Gazebo', 'Solidworks', 'Embedded Systems Development', 'Academic/Grant Writing', 'Public Speaking']
   }
 ];
