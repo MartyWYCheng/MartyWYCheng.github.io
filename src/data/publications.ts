@@ -1,7 +1,7 @@
 export const publicationsData = [
   {
     title: 'Flexible multilayer tactile sensor on a soft robotic fingertip',
-    journal: 'IEEE Sensors',
+    journal: '2022 IEEE Sensors',
     date: '2022',
     authors: 'Sriramana Sankar, Ariel Slepyan, Mark M Iskarous, Wen-Yu Cheng, Rene DeBrabander, Jinghua Zhang, Arnav Gupta, Nitish V Thakor',
     description: '',
