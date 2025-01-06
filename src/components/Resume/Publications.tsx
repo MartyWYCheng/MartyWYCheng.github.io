@@ -1,12 +1,13 @@
 import React from 'react';
-//import { BookOpen } from 'lucide-react';
-import { MdOutlineBookmarkAdded } from "react-icons/md";
+//import { UserRoundPen } from 'lucide-react';
+import { BookCheck } from 'lucide-react';BookCheck
+//import { MdOutlineBookmarkAdded } from "react-icons/md";
 import { Section } from './Section';
 import { publicationsData } from '../../data/publications';
 
 export function Publications() {
   return (
-    <Section icon={<MdOutlineBookmarkAdded />} title="Publications" titleClassName="text-custom-blue">
+    <Section icon={<BookCheck />} title="Publications" titleClassName="text-custom-blue">
       <div className="space-y-4">
         {publicationsData.map((pubs) => (
           <div key={pubs.title} className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors duration-300">
