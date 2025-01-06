@@ -4,6 +4,7 @@ import { Bio } from '../components/Resume/Bio';
 import { Experience } from '../components/Resume/Experience';
 import { Education } from '../components/Resume/Education';
 import { Projects } from '../components/Resume/Projects';
+import { Publications } from '../components/Resume/Publications';
 import { PageLayout } from '../components/Layout/PageLayout';
 
 export function Resume() {
@@ -15,6 +16,7 @@ export function Resume() {
           <Bio />
           <Experience />
           <Projects />
+          <Publications />
           <Education />
         </main>
       </div>
