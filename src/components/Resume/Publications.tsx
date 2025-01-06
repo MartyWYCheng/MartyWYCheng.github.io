@@ -1,7 +1,8 @@
 import React from 'react';
 //import { UserRoundPen } from 'lucide-react';
-import { BookCheck } from 'lucide-react';BookCheck
+import { BookCheck, ArrowRight } from 'lucide-react';
 //import { MdOutlineBookmarkAdded } from "react-icons/md";
+import { Link } from 'react-router-dom';
 import { Section } from './Section';
 import { publicationsData } from '../../data/publications';
 
@@ -11,6 +12,15 @@ export function Publications() {
       <div className="space-y-4">
         {publicationsData.map((pubs) => (
           <div key={pubs.title} className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors duration-300">
+            {/*}
+            <Link 
+              to={`/experience/${pubs.id}`}
+              className="group flex items-center gap-2 text-xl font-semibold text-blue-400 hover:text-blue-300"
+            >
+              {pubs.title}
+              <ArrowRight size={20} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+            */}
             <h3 className="text-xl font-semibold text-blue-400">{pubs.title}</h3>
             <p className="text-gray-400">{pubs.journal}</p>
             {/*
