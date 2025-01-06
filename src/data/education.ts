@@ -17,7 +17,7 @@ export const educationData = [
     period: '2018 - 2021',
     achievements: [
       'Computer Science Minor',
-      'FAU High School Dual Enrollment Program',
+      'FAU High School <strong>Dual Enrollment</strong> Program',
       'Innovation Leadership Honors Program (ILHP)'
     ]
   },
