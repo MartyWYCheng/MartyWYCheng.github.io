@@ -1,22 +1,22 @@
 import React from 'react';
-import { Experience } from '../../types/experience';
+import { Projects } from '../../types/projects';
 
-interface ExperienceContentProps {
-  experience: Experience;
+interface ProjectContentProps {
+  projects: Projects;
 }
 
-export function ExperienceContent({ experience }: ExperienceContentProps) {
+export function ProjectContent({ projects }: ProjectContentProps) {
   return (
     <div className="space-y-6">
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
-        <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: experience.description }}></p>
+        <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: projects.description }}></p>
       </section>
 
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Key Responsibilities</h2>
         <ul className="list-disc list-inside text-gray-300 space-y-2">
-          {experience.responsibilities?.map((resp, index) => (
+          {projects.responsibilities?.map((resp, index) => (
             <li key={index}>{resp}</li>
           ))}
         </ul>
@@ -25,7 +25,7 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Skills Used</h2>
         <div className="flex flex-wrap gap-2">
-          {experience.skills.map((skill) => (
+          {projects.skills.map((skill) => (
             <span
               key={skill}
               className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded"
@@ -36,11 +36,11 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
         </div>
       </section>
 
-      {experience.achievements && (
+      {projects.achievements && (
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">Key Achievements</h2>
           <ul className="list-disc list-inside text-gray-300 space-y-2">
-            {experience.achievements.map((achievement, index) => (
+            {projects.achievements.map((achievement, index) => (
               <li key={index}>{achievement}</li>
             ))}
           </ul>

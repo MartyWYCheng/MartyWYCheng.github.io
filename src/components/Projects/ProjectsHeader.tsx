@@ -1,16 +1,18 @@
 import React from 'react';
-import { Experience } from '../../types/experience';
+import { Projects } from '../../types/projects';
 
-interface ExperienceHeaderProps {
-  experience: Experience;
+interface ProjectHeaderProps {
+  projects: Projects;
 }
 
-export function ExperienceHeader({ experience }: ExperienceHeaderProps) {
+export function ExperienceHeader({ projects }: ProjectHeaderProps) {
   return (
     <div className="mb-6">
-      <h1 className="text-3xl font-bold text-blue-400 mb-2">{experience.title}</h1>
-      <p className="text-xl text-gray-300">{experience.company}</p>
-      <p className="text-gray-400">{experience.period}</p>
+      <h1 className="text-3xl font-bold text-blue-400 mb-2">{projects.title}</h1>
+      {/*
+      <p className="text-xl text-gray-300">{projects.company}</p>
+      <p className="text-gray-400">{projects.period}</p>
+      */}
     </div>
   );
 }
