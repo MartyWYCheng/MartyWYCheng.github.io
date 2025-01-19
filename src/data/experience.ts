@@ -3,6 +3,7 @@ interface Experience {
   title: string;
   company: string;
   period: string;
+  summary: string;
   description: string;
   responsibilities: string[];
   achievements?: string[];
@@ -15,6 +16,7 @@ export const experienceData: Experience[] = [
     title: 'Systems Engineer',
     company: 'Golden Hour Medical',
     period: '2023 - 2024',
+    summary: 'Pioneered new life-saving automatic tourniquet technology. Led the effort in bringing prototype hardware into mass production in under four months and ensured functionality of critical complex systems.',
     description: 'Pioneered new life-saving automatic tourniquet technology. Led the effort in bringing prototype hardware into mass production in under four months and ensured functionality of critical complex systems.',
     responsibilities: [
       'Lead the effort in ensuring functionality of critical complex systems AutoTQ, a new IoT-enabled life-saving automatic tourniquet device',
@@ -32,6 +34,7 @@ export const experienceData: Experience[] = [
     title: 'Research Intern',
     company: 'Johns Hopkins University - Neuroengineering and Biomedical Instrumentation Laboratory',
     period: '2020 – 2024',
+    summary: 'PI: <em>Dr. Nitish Thakor</em><br />Collaborated with an interdisciplinary team fully remotely and led the design of a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. Publication to <strong>IEEE Science Advances Journal</strong> under review.',
     description: 'PI: <em>Dr. Nitish Thakor</em><br />Collaborated with an interdisciplinary team fully remotely and led the design of a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. Publication to <strong>IEEE Science Advances Journal</strong> under review.',
     responsibilities: [
       'Design a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger',
@@ -52,6 +55,7 @@ export const experienceData: Experience[] = [
     title: 'Research Assistant',
     company: 'Florida Atlantic University - BioRobotics Lab',
     period: '2018 - Present',
+    summary: 'PI: <em>Dr. Erik Engeberg</em><br />Developing new methods of improving the quality of life of amputees through advancements such as smart AI robotic prosthetics with integrated haptic feedback.',
     description: 'PI: <em>Dr. Erik Engeberg</em><br />Developing new methods of improving the quality of life of amputees through advancements such as smart AI robotic prosthetics with integrated haptic feedback.',
     responsibilities: [
       'Designed a novel high-density Force Myogram (FMG) sensor array, outperforming EMG with 99% classification accuracy across 20 hand gestures using AI pattern recognition in our 10-subject test. Publication in progress.',
@@ -69,6 +73,7 @@ export const experienceData: Experience[] = [
     title: 'Research Assistant',
     company: 'Florida Atlantic University - Adaptive Learning Systems Lab',
     period: '2018 - Present',
+    summary: 'PI: <em>Dr. Zhen Ni</em><br />Diving deep into AI robotic applications with high-end vision/navigation simulations of mobile robots and robotic arms such as TurtleBot and Kinova Gen3 Lite through ROS.',
     description: 'PI: <em>Dr. Zhen Ni</em><br />Diving deep into AI robotic applications with high-end vision/navigation simulations of mobile robots and robotic arms such as TurtleBot and Kinova Gen3 Lite through ROS.',
     responsibilities: [
       'Develop a low-cost Wireless Charging Station for use with the integrated computer vision system of the Turtle-Bot 3 mobile robot platform.',

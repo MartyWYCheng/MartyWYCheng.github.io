@@ -35,7 +35,7 @@ export function Experience() {
                 </div>
                 <span className="text-gray-500">{exp.period}</span>
               </div>
-              <p className="mt-2 text-gray-300" dangerouslySetInnerHTML={{ __html: exp.description }}></p>
+              <p className="mt-2 text-gray-300" dangerouslySetInnerHTML={{ __html: exp.summary }}></p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {exp.skills.map((skill) => (
                   <span

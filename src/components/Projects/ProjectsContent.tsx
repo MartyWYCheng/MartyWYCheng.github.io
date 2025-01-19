@@ -10,7 +10,7 @@ export function ProjectContent({ projects }: ProjectContentProps) {
     <div className="space-y-6">
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
-        <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: projects.description }}></p>
+        <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: projects.summary }}></p>
       </section>
 {/*
       <section>
@@ -20,9 +20,13 @@ export function ProjectContent({ projects }: ProjectContentProps) {
             <li key={index}>{resp}</li>
           ))}
         </ul>
-        
       </section>
 */}
+      <section>
+        <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
+        <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: projects.description }}></p>
+      </section>
+
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Skills Used</h2>
         <div className="flex flex-wrap gap-2">

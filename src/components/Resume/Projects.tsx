@@ -35,7 +35,7 @@ export function Projects() {
                 </div>
                 {/*<span className="text-gray-500">{proj.period}</span>*/}
               </div>
-              <p className="mt-2 text-gray-300" dangerouslySetInnerHTML={{ __html: proj.description }}></p>
+              <p className="mt-2 text-gray-300" dangerouslySetInnerHTML={{ __html: proj.summary }}></p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {proj.skills.map((skill) => (
                   <span
