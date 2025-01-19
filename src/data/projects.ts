@@ -14,7 +14,7 @@ export const projectsData: Projects[] = [
     summary: 'Integrated an LLM AI chatbot with retrieval augmented generation (RAG) into an app developed from ground up in Swift.',
     description: 'Integrated an LLM AI chatbot with retrieval augmented generation (RAG) into an app developed from ground up in Swift.',
     skills: ['AI Integration', 'LLM', 'RAG', 'Langchain', 'Swift', 'OpenAI API', 'Python', 'Git Version Control'],
-    images: ['profile_bw.jpg', 'favicon.png'],
+    images: ['app1.png', 'app2.png', 'app3.png'],
   },
   {
     id: 'adaptive-fit-socket',
