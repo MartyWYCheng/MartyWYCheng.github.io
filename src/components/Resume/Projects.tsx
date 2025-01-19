@@ -1,7 +1,8 @@
 import React from 'react';
-import { Code } from 'lucide-react';
-import { Section } from './Section';
+import { Link } from 'react-router-dom';
+import { Code, ArrowRight } from 'lucide-react';
 import { projectsData } from '../../data/projects';
+import { Section } from './Section';
 import { useSkillsHighlight } from '../../hooks/useSkillsHighlight';
 
 export function Projects() {
@@ -9,22 +10,34 @@ export function Projects() {
 
   return (
     <Section icon={<Code />} title="Projects" titleClassName="text-custom-blue">
-      <div className="space-y-4">
-        {projectsData.map((project) => {
-          const isHighlighted = activeSkill && project.skills.includes(activeSkill);
+      <div className="space-y-6">
+        {projectsData.map((proj) => {
+          const isHighlighted = activeSkill && proj.skills.includes(activeSkill);
           return (
             <div
-              key={project.title}
+              key={proj.id}
               className={`p-4 rounded-lg transition-all duration-300 ${
                 isHighlighted
                   ? 'bg-blue-900/20 border border-blue-500/50'
                   : 'bg-gray-800/50 hover:bg-gray-800'
               }`}
             >
-              <h3 className="text-xl font-semibold text-blue-400">{project.title}</h3>
-              <p className="mt-2 text-gray-300" dangerouslySetInnerHTML={{ __html: project.description }}></p>
+              <div className="flex justify-between items-start">
+                <div>
+                  <Link 
+                    to={`/projects/${proj.id}`}
+                    className="group flex items-center gap-2 text-xl font-semibold text-blue-400 hover:text-blue-300"
+                  >
+                    {proj.title}
+                    <ArrowRight size={20} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </Link>
+                  {/*<p className="text-gray-400">{proj.company}</p>*/}
+                </div>
+                {/*<span className="text-gray-500">{proj.period}</span>*/}
+              </div>
+              <p className="mt-2 text-gray-300" dangerouslySetInnerHTML={{ __html: proj.description }}></p>
               <div className="mt-3 flex flex-wrap gap-2">
-                {project.skills.map((skill) => (
+                {proj.skills.map((skill) => (
                   <span
                     key={skill}
                     className={`text-xs px-2 py-1 rounded ${
