@@ -2,7 +2,7 @@ import React from 'react';
 //import { UserRoundPen } from 'lucide-react';
 import { BookCheck, ArrowRight } from 'lucide-react';
 //import { MdOutlineBookmarkAdded } from "react-icons/md";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { Section } from './Section';
 import { publicationsData } from '../../data/publications';
 

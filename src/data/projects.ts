@@ -15,11 +15,11 @@ export const projectsData: Projects[] = [
     skills: ['AI Integration', 'LLM', 'RAG', 'Langchain', 'Swift', 'OpenAI API', 'Python', 'Git Version Control'],
   },
   {
-    id: 'adaptive-fit-prosethtic-socket',
+    id: 'adaptive-fit-socket',
     title: 'Adaptive Fit Granular Jamming Prosthetic Socket',
     summary: 'Led a team in designing and fabricating a novel adaptive fit prosthetic socket using granular jamming.',
     description: 'Led a team in designing and fabricating a novel adaptive fit prosthetic socket using granular jamming.',
-    skills: ['AI Integration', 'LLM', 'RAG', 'Langchain', 'Swift', 'OpenAI API', 'Python', 'Git Version Control'],
+    skills: ['Biomedical Devices', 'Solidworks', 'Granular Jamming', 'Arduino', 'C/C++', 'Rapid Prototyping', '3D Printing', 'Git Version Control'],
   },
   {
     id: '',
