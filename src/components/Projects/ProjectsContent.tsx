@@ -15,11 +15,12 @@ export function ProjectContent({ projects }: ProjectContentProps) {
 
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Key Responsibilities</h2>
-        <ul className="list-disc list-inside text-gray-300 space-y-2">
+        {/*<ul className="list-disc list-inside text-gray-300 space-y-2">
           {projects.responsibilities?.map((resp, index) => (
             <li key={index}>{resp}</li>
           ))}
         </ul>
+        */}
       </section>
 
       <section>

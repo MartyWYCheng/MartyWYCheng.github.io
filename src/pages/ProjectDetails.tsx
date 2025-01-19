@@ -1,26 +1,39 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { projectsData } from '../data/projects';
+import { PageLayout } from '../components/Layout/PageLayout';
+import { BackButton } from '../components/UI/BackButton';
+import { ProjectHeader } from '../components/Projects/ProjectsHeader';
+import { ProjectContent } from '../components/Projects/ProjectsContent';
 
-export function ProjectDetails() {
-  const { id } = useParams<{ id: string }>();
-  const project = projectsData.find((project) => project.id === id);
+export function ProjectDetail() {
+  const { id } = useParams();
+  const projects = projectsData.find((proj) => proj.id === id);
 
-  if (!project) {
-    return <div>Project not found</div>;
+  if (!projects) {
+    return (
+      <PageLayout>
+        <div className="p-8">
+          <div className="max-w-3xl mx-auto">
+            <BackButton />
+            <p className="text-white">Project not found.</p>
+          </div>
+        </div>
+      </PageLayout>
+    );
   }
 
   return (
-    <div className="space-y-6">
-      <h1 className="text-4xl font-bold text-white">{project.title}</h1>
-      <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: project.description }}></p>
-      <div className="mt-3 flex flex-wrap gap-2">
-        {project.skills.map((skill) => (
-          <span key={skill} className="text-xs px-2 py-1 rounded bg-gray-700 text-gray-300">
-            {skill}
-          </span>
-        ))}
+    <PageLayout>
+      <div className="p-8">
+        <div className="max-w-3xl mx-auto">
+          <BackButton />
+          <div className="bg-gray-800/50 rounded-lg p-8">
+            <ProjectHeader projects={projects} />
+            <ProjectContent projects={projects} />
+          </div>
+        </div>
       </div>
-    </div>
+    </PageLayout>
   );
 }

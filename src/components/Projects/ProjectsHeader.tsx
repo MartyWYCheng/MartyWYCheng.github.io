@@ -5,7 +5,7 @@ interface ProjectHeaderProps {
   projects: Projects;
 }
 
-export function ExperienceHeader({ projects }: ProjectHeaderProps) {
+export function ProjectHeader({ projects }: ProjectHeaderProps) {
   return (
     <div className="mb-6">
       <h1 className="text-3xl font-bold text-blue-400 mb-2">{projects.title}</h1>
