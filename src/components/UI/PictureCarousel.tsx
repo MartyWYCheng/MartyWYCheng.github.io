@@ -14,7 +14,7 @@ export function PictureCarousel({ images }: PictureCarouselProps) {
       <h2 className="text-xl font-semibold text-white mb-3">Project Images</h2>
       <div className="flex space-x-4 overflow-x-auto">
         {images.map((image, index) => {
-          const imagePath = `public/img/${image}`;
+          const imagePath = `/img/${image}`;
           console.log(`Image path: ${imagePath}`);
           return (
             <img
