@@ -12,17 +12,17 @@ export function ProjectContent({ projects }: ProjectContentProps) {
         <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
         <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: projects.description }}></p>
       </section>
-
+{/*
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Key Responsibilities</h2>
-        {/*<ul className="list-disc list-inside text-gray-300 space-y-2">
+        <ul className="list-disc list-inside text-gray-300 space-y-2">
           {projects.responsibilities?.map((resp, index) => (
             <li key={index}>{resp}</li>
           ))}
         </ul>
-        */}
+        
       </section>
-
+*/}
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Skills Used</h2>
         <div className="flex flex-wrap gap-2">
