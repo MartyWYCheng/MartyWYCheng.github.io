@@ -21,7 +21,7 @@ export function PictureCarousel({ images }: PictureCarouselProps) {
               <img
                 src={imagePath}
                 alt={`Project image ${index + 1}`}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-contain rounded-lg"
                 onError={(e) => console.error(`Failed to load image: ${imagePath}`, e)}
               />
             </div>
