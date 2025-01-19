@@ -9,7 +9,7 @@ export function Bio() {
       <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-custom-blue">
           <img
-            src="https://github.com/MartyWYCheng/MartyWYCheng.github.io/blob/main/assets/img/profile_bw.jpg?raw=true"
+            src="https://github.com/MartyWYCheng/MartyWYCheng.github.io/blob/main/public/img/profile_bw.jpg?raw=true"
             alt="Profile"
             className="w-full h-full object-cover"
           />

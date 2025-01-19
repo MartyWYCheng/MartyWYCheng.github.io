@@ -17,11 +17,11 @@ export function PictureCarousel({ images }: PictureCarouselProps) {
           const imagePath = `/img/${image}`;
           console.log(`Image path: ${imagePath}`);
           return (
-            <div key={index} className="flex-shrink-0 w-64 h-40">
+            <div key={index} className="flex-shrink-0 w-64">
               <img
                 src={imagePath}
                 alt={`Project image ${index + 1}`}
-                className="w-full h-full object-contain rounded-lg"
+                className="w-full h-auto object-contain rounded-lg"
                 onError={(e) => console.error(`Failed to load image: ${imagePath}`, e)}
               />
             </div>
