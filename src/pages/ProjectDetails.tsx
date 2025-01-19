@@ -5,6 +5,7 @@ import { PageLayout } from '../components/Layout/PageLayout';
 import { BackButton } from '../components/UI/BackButton';
 import { ProjectHeader } from '../components/Projects/ProjectsHeader';
 import { ProjectContent } from '../components/Projects/ProjectsContent';
+import { PictureCarousel } from '../components/UI/PictureCarousel';
 
 export function ProjectDetail() {
   const { id } = useParams();
@@ -31,6 +32,7 @@ export function ProjectDetail() {
           <div className="bg-gray-800/50 rounded-lg p-8">
             <ProjectHeader projects={projects} />
             <ProjectContent projects={projects} />
+            <PictureCarousel images={projects.images || []} />
           </div>
         </div>
       </div>

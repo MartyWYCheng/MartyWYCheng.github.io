@@ -5,6 +5,7 @@ interface Projects {
   description: string;
   achievements?: string[];
   skills: string[];
+  images?: string[];
 }
 export const projectsData: Projects[] = [
   {
@@ -13,6 +14,7 @@ export const projectsData: Projects[] = [
     summary: 'Integrated an LLM AI chatbot with retrieval augmented generation (RAG) into an app developed from ground up in Swift.',
     description: 'Integrated an LLM AI chatbot with retrieval augmented generation (RAG) into an app developed from ground up in Swift.',
     skills: ['AI Integration', 'LLM', 'RAG', 'Langchain', 'Swift', 'OpenAI API', 'Python', 'Git Version Control'],
+    images: ['profile_bw.jpg', 'image2.jpg'],
   },
   {
     id: 'adaptive-fit-socket',
@@ -20,6 +22,7 @@ export const projectsData: Projects[] = [
     summary: 'Led a team in designing and fabricating a novel adaptive fit prosthetic socket using granular jamming.',
     description: 'Led a team in designing and fabricating a novel adaptive fit prosthetic socket using granular jamming.',
     skills: ['Biomedical Devices', 'Solidworks', 'Granular Jamming', 'Arduino', 'C/C++', 'Rapid Prototyping', '3D Printing', 'Git Version Control'],
+    images: ['image3.jpg', 'image4.jpg'],
   },
   {
     id: '',
@@ -27,5 +30,6 @@ export const projectsData: Projects[] = [
     summary: '',
     description: 'This section is under construction. Please check back later for updates.',
     skills: [],
+    images: [],
   },
 ];
