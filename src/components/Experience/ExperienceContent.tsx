@@ -12,8 +12,8 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
         <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
         <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: experience.description }}></p>
       </section>
-
-      <section>
+{/*
+     <section>
         <h2 className="text-xl font-semibold text-white mb-3">Key Responsibilities</h2>
         <ul className="list-disc list-inside text-gray-300 space-y-2">
           {experience.responsibilities?.map((resp, index) => (
@@ -21,7 +21,18 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
           ))}
         </ul>
       </section>
-
+*/}
+      {experience.achievements && (
+        <section>
+          <h2 className="text-xl font-semibold text-white mb-3">Key Achievements</h2>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            {experience.achievements.map((achievement, index) => (
+              <li key={index}>{achievement}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+      
       <section>
         <h2 className="text-xl font-semibold text-white mb-3">Skills Used</h2>
         <div className="flex flex-wrap gap-2">
@@ -34,18 +45,7 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
             </span>
           ))}
         </div>
-      </section>
-
-      {experience.achievements && (
-        <section>
-          <h2 className="text-xl font-semibold text-white mb-3">Key Achievements</h2>
-          <ul className="list-disc list-inside text-gray-300 space-y-2">
-            {experience.achievements.map((achievement, index) => (
-              <li key={index}>{achievement}</li>
-            ))}
-          </ul>
-        </section>
-      )}
+      </section>     
     </div>
   );
 }

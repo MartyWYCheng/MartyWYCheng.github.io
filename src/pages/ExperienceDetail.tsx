@@ -5,6 +5,7 @@ import { PageLayout } from '../components/Layout/PageLayout';
 import { BackButton } from '../components/UI/BackButton';
 import { ExperienceHeader } from '../components/Experience/ExperienceHeader';
 import { ExperienceContent } from '../components/Experience/ExperienceContent';
+import { PictureCarousel } from '../components/UI/PictureCarousel';
 
 export function ExperienceDetail() {
   const { id } = useParams();
@@ -31,6 +32,7 @@ export function ExperienceDetail() {
           <div className="bg-gray-800/50 rounded-lg p-8">
             <ExperienceHeader experience={experience} />
             <ExperienceContent experience={experience} />
+            <PictureCarousel images={experience.images || []} />
           </div>
         </div>
       </div>

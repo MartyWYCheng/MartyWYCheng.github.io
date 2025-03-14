@@ -20,9 +20,9 @@ export function PictureCarousel({ images }: PictureCarouselProps) {
   };
 
   return (
-    <div className="mt-8 text-center">
-      <h2 className="text-xl font-semibold text-white mb-3">Project Images</h2>
-      <div className="relative inline-block">
+    <div className="mt-8">
+      <h2 className="text-xl font-semibold text-white mb-3 text-left">Project Images</h2>
+      <div className="relative inline-block text-center">
         <img
           src={`/img/${images[currentIndex]}`}
           alt={`Project image ${currentIndex + 1}`}

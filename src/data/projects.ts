@@ -33,10 +33,10 @@ export const projectsData: Projects[] = [
     images: ['hydronexgen1.JPG', 'hydronexgen2.JPG', 'hydronexgen3.JPG','hydronexgen4.JPG'],
   },{
     id: 'ev',
-    title: 'Electric Supercar',
-    summary: 'Details coming soon...',
-    description: 'Details coming soon...',
-    skills: [],
-    images: [],
+    title: 'GT-EV Electric Supercar',
+    summary: 'Built an electric supercar from the ground up.',
+    description: 'We simply built an electric supercar from the ground up. Built on the DDR Grullón GT4 kit with a Toyota MR2 Chassis with goals of 0-60 mph in under four seconds and over 100+ miles per charge.',
+    skills: ['Interdisciplinary Engineering'],
+    images: ['gtev1.JPG','gtev_group.JPG'],
   },
 ];
