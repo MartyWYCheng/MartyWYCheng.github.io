@@ -7,6 +7,7 @@ interface Projects {
   skills: string[];
   images?: string[];
 }
+
 export const projectsData: Projects[] = [
   {
     id: 'ai-powered-dog-care',
@@ -31,7 +32,8 @@ export const projectsData: Projects[] = [
     description: 'We spent several months integrating a hydrogen fuel cell into an RC car while making time for the team to practice with the modified car. We had to overcome numerous engineering challenges in order to optimize speed, acceleration, handling, and the toughest of all, weight. Despite taking heavy damage through the race, we won the fastest lap award at the Florida state-wide H2AC Hydrogen Horizon Automotive Challenge.',
     skills: ['Team Leadership','Rapid Prototyping', '3D Printer Proficiency', 'Solidworks', 'Embedded Systems Development'],
     images: ['hydronexgen1.JPG', 'hydronexgen2.JPG', 'hydronexgen3.JPG','hydronexgen4.JPG'],
-  },{
+  },
+  {
     id: 'ev',
     title: 'GT-EV Electric Supercar',
     summary: 'Built an electric supercar from the ground up.',
