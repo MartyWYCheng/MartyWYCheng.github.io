@@ -22,7 +22,7 @@ export const projectsData: Projects[] = [
     summary: 'Led a team in designing and fabricating a novel adaptive fit prosthetic socket using granular jamming.',
     description: 'Led a team in designing and fabricating a novel adaptive fit prosthetic socket using granular jamming.',
     skills: ['Biomedical Devices', 'Solidworks', 'Granular Jamming', 'Arduino', 'C/C++', 'Rapid Prototyping', '3D Printing', 'Git Version Control'],
-    images: ['adaptiveSocket.jpg'],
+    images: ['adaptiveSocket.JPG'],
   },
   {
     id: 'hydrogen-fuel-cell',
