@@ -31,7 +31,7 @@ export function Bio() {
             <a href="mailto:marty.chengwy@gmail.com" className="text-custom-blue hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
               <Mail size={20} />
             </a>
-            <a href="https://github.com/MartyWYCheng/MartyWYCheng.github.io/blob/main/assets/Resume_WenYuCheng.pdf" className="text-custom-blue hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1udZ_ngo2iC5KfgNwWzrBNGriZ3DVoDbj/view?usp=sharing" className="text-custom-blue hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
               <FileText size={20} />
             </a>
           </div>
