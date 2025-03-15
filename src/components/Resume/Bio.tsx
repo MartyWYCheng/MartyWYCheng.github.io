@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Github, Linkedin, Mail } from 'lucide-react';
+import { User, Github, Linkedin, Mail,  FileText } from 'lucide-react';
 import { FaGoogleScholar } from "react-icons/fa6"; // Import Google icon
 import { Section } from './Section';
 
@@ -30,6 +30,9 @@ export function Bio() {
             </a>
             <a href="mailto:marty.chengwy@gmail.com" className="text-custom-blue hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
               <Mail size={20} />
+            </a>
+            <a href="https://github.com/MartyWYCheng/MartyWYCheng.github.io/blob/main/assets/Resume_WenYuCheng.pdf" className="text-custom-blue hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+              <FileText size={20} />
             </a>
           </div>
         </div>
