@@ -83,6 +83,6 @@ export const experienceData: Experience[] = [
       'Manuscript for PPO training algorithm accepted to 2025 SPIE Conference.'
     ],
     skills: ['AI Integration', 'Deep Reinforcement Learning (DRL)', 'TensorFlow', 'Scikit-learn', 'Keras', 'PyTorch', 'OpenCV', 'Pandas', 'NumPy', 'Python', 'C/C++', 'ROS', 'TurtleBot3', 'Kinova Gen3 Lite', 'Gazebo', 'Solidworks', 'Embedded Systems Development', 'Academic/Grant Writing', 'Public Speaking'],
-    images: [],
+    images: ['computerVision.mp4'],
   }
 ];
