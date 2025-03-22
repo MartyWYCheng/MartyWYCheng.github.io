@@ -16,7 +16,7 @@ export function Projects() {
           return (
             <div
               key={proj.id}
-              className={`p-4 rounded-lg transition-all duration-300 ${
+              className={`project-item p-4 rounded-lg transition-all duration-300 ${
                 isHighlighted
                   ? 'bg-blue-900/20 border border-blue-500/50'
                   : 'bg-gray-800/50 hover:bg-gray-800'
@@ -40,6 +40,7 @@ export function Projects() {
                 {proj.skills.map((skill) => (
                   <span
                     key={skill}
+                    data-skill={skill}
                     className={`text-xs px-2 py-1 rounded ${
                       skill === activeSkill
                         ? 'bg-blue-500 text-white'

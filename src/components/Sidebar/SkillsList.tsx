@@ -4,7 +4,7 @@ import { useSkillsHighlight } from '../../hooks/useSkillsHighlight';
 import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
 
 export function SkillsList() {
-  const { setActiveSkill } = useSkillsHighlight();
+  const { setActiveSkill, scrollToSkill, setScrollToSkill } = useSkillsHighlight();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>('Specialty/Focus');
 
@@ -15,6 +15,27 @@ export function SkillsList() {
     mediaQuery.addEventListener('change', handleResize);
     return () => mediaQuery.removeEventListener('change', handleResize);
   }, []);
+
+  useEffect(() => {
+    if (scrollToSkill) {
+      // Find all elements containing the skill text
+      const elements = Array.from(document.querySelectorAll(`[data-skill="${scrollToSkill}"]`));
+      if (elements.length > 0) {
+        // Sort elements by their position in the document
+        const sortedElements = elements.sort((a, b) => {
+          const aRect = a.getBoundingClientRect();
+          const bRect = b.getBoundingClientRect();
+          return aRect.top - bRect.top;
+        });
+        // Scroll to the title of the first instance
+        const firstElement = sortedElements[0].closest('.experience-item, .project-item');
+        if (firstElement) {
+          firstElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        setScrollToSkill(null);
+      }
+    }
+  }, [scrollToSkill, setScrollToSkill]);
 
   const toggleCategory = (category: string) => {
     setActiveCategory((prev) => (prev === category ? null : category));
@@ -46,9 +67,15 @@ export function SkillsList() {
                       {skills.map((skill) => (
                         <div
                           key={skill}
+                          id={skill}
                           className="p-2 rounded hover:bg-gray-800 cursor-pointer transition-colors duration-300"
                           onMouseEnter={() => setActiveSkill(skill)}
                           onMouseLeave={() => setActiveSkill(null)}
+                          onClick={() => {
+                            if (scrollToSkill !== skill) {
+                              setScrollToSkill(skill);
+                            }
+                          }}
                         >
                           <span className="text-gray-100">{skill}</span>
                         </div>
