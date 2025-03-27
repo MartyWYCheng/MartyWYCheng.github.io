@@ -41,6 +41,17 @@ export function SkillsList() {
     setActiveCategory((prev) => (prev === category ? null : category));
   };
 
+  const handleSkillClick = (skill: string) => {
+    if (scrollToSkill !== skill) {
+      setScrollToSkill(skill);
+    }
+    // Collapse the sidebar on mobile
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (mediaQuery.matches) {
+      setIsCollapsed(true);
+    }
+  };
+
   return (
     <div className="relative">
       <button
@@ -71,11 +82,7 @@ export function SkillsList() {
                           className="p-2 rounded hover:bg-gray-800 cursor-pointer transition-colors duration-300"
                           onMouseEnter={() => setActiveSkill(skill)}
                           onMouseLeave={() => setActiveSkill(null)}
-                          onClick={() => {
-                            if (scrollToSkill !== skill) {
-                              setScrollToSkill(skill);
-                            }
-                          }}
+                          onClick={() => handleSkillClick(skill)}
                         >
                           <span className="text-gray-100">{skill}</span>
                         </div>
