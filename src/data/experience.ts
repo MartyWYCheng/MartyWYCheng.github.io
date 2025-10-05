@@ -35,15 +35,15 @@ export const experienceData: Experience[] = [
     title: 'Research Intern',
     company: 'Johns Hopkins University - Neuroengineering and Biomedical Instrumentation Laboratory',
     period: '2020 – 2024',
-    summary: 'PI: <em>Dr. Nitish Thakor</em><br />Collaborated with an interdisciplinary team fully remotely and led the design of a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. Publication to <strong>IEEE Science Advances Journal</strong> under review.',
-    description: 'PI: <em>Dr. Nitish Thakor</em><br />Collaborated with an interdisciplinary team fully remotely and led the design of a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. Publication to <strong>IEEE Science Advances Journal</strong> under review.',
+    summary: 'PI: <em>Dr. Nitish Thakor</em><br />Collaborated with an interdisciplinary team fully remotely and led the design of a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. Published findings at <strong>AAAS Science Advances Journal</strong> and 2022 <strong>IEEE Sensors Conference</strong> under review.',
+    description: 'PI: <em>Dr. Nitish Thakor</em><br />Collaborated with an interdisciplinary team fully remotely and led the design of a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force of traditional soft robotic prosthetic fingers. Published findings at <strong>AAAS Science Advances Journal</strong> and 2022 <strong>IEEE Sensors Conference</strong> under review.',
     responsibilities: [],
     achievements: [
       'Fabricated a novel biomimetic Soft-Rigid Hybrid Prosthetic Finger with more than 3 times the grasping force and 2 times the flexion angle of traditional soft robotic prosthetic fingers',
       'Integrated a novel tactile sensor into the hybrid prosthetic finger for touch sensing',
       'Performed extensive finite element analysis (FEA) to ensure proper material selection and prevent failure',
       'Collaborated with the cross-disciplinary research team at the Johns Hopkins Neuroengineering and Biomedical Instrumentation Laboratory fully remotely during the COVID-19 pandemic',
-      'Published findings in IEEE Science Advances Journal'
+      'Published findings in AAAS Science Advances Journal and 2022 IEEE Sensors Conference'
     ],
     skills: ['Solidworks', 'Soft Robotics', 'Biomedical Devices', 'Finite Element Analysis (FEA)', 'ANSYS', 'Tactile Sensing', 'Human-Robot/Computer Interaction (HRI/HCI)', 'Mold Making & Casting', 'Prosthetics', 'Interdisciplinary Engineering'],
     images: ['jhuVid.mp4','jhu1.png'],
@@ -65,7 +65,7 @@ export const experienceData: Experience[] = [
       'Collaborated with the Quality Assurance team in extensive engineering documentation/history and for device risk management.'
     ],
     skills: ['Biomedical Devices', 'Embedded Systems Development', 'Rapid Prototyping', 'Git Version Control', 'Solidworks', 'Design for Manufacturability (DFM)', 'OnShape', '3D Printer Proficiency', 'Arduino', 'C/C++', 'Interdisciplinary Engineering'],
-    images: ['goldenHour1.JPG', 'goldenHour2.JPG'],
+    images: ['goldenHour3.jpg', 'goldenHour1.JPG', 'goldenHour2.JPG'],
   },
 
   {
@@ -80,7 +80,7 @@ export const experienceData: Experience[] = [
       'Develop a low-cost Wireless Charging Station for use with the integrated computer vision system of the Turtle-Bot 3 mobile robot platform.',
       'Improve a PPO robotic arm training algorithm for parallel training of the Kinova Gen 3 Robot Arm. ',
       'Published and presented work on Wireless Charging Station at 2023 IEEE HONET conference.',
-      'Manuscript for PPO training algorithm accepted to 2025 SPIE Conference.'
+      'Published PPO robotic arm training algorithm findings at 2025 SPIE Conference.'
     ],
     skills: ['AI Integration', 'Deep Reinforcement Learning (DRL)', 'TensorFlow', 'Scikit-learn', 'Keras', 'PyTorch', 'OpenCV', 'Pandas', 'NumPy', 'Python', 'C/C++', 'ROS', 'TurtleBot3', 'Kinova Gen3 Lite', 'Gazebo', 'Solidworks', 'Embedded Systems Development', 'Academic/Grant Writing', 'Public Speaking'],
     images: ['computerVision.mp4', 'kinovaSim1.png', 'kinovaSim2.png', 'kinova.png'],

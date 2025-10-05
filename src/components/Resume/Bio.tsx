@@ -42,7 +42,7 @@ export function Bio() {
         Versatile researcher with over 10 years of experience in rapid prototyping, prosthetics, leadership, 
         academic/grant writing, and public speaking. Great passion for finding creative solutions to critical 
         challenges. Thrives in all aspects of an interdisciplinary engineering project and excels in 
-        communicating complex ideas. Highly interested in AI and data ana-lytics in medical and Human-Robot 
+        communicating complex ideas. Highly interested in AI and data analytics in medical and Human-Robot 
         Interaction (HRI) applications.
         </p>
       </Section>
